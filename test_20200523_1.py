@@ -13,10 +13,10 @@
 # 解释: 输入不存在公共前缀。
 # 说明:
 
+
 # 所有输入只包含小写字母 a-z 。
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-        strlen = len(strs)
         string = ""
         for i in zip(*strs):
             if len(set(i)) == 1:
